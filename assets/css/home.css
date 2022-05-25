@@ -2,6 +2,10 @@ html {
   height: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
   overflow-y: auto;
   overflow-x: hidden !important;
