@@ -1,4 +1,4 @@
-html {
+/*** html {
   height: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -10,6 +10,7 @@ html {
   overflow-y: auto;
   overflow-x: hidden !important;
 }
+
 body {
   margin: 0;
   min-height: 100%;
@@ -31,3 +32,49 @@ body {
   -ms-user-select: none; /* IE 10+ */
   user-select: none; /* Likely future */
 }
+***/
+body {
+  background: magenta;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50vh;
+}
+
+
+
+
+.blinkityblinkblink {
+  color: red;
+  font-weight: bold;
+  font-size: 6em;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.technicolor {
+   animation: glow 2s linear infinite;
+}
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
+
+
